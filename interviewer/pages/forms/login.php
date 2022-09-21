@@ -88,10 +88,11 @@
      if(status != "fail"){
        console.log(data);
        if(data == "fail") { alert("로그인정보가 다릅니다."); $("#pass").val(""); return; }
-      location.href='../../index.html';
+      location.href='../../index.php';
      }
      else
      {
+         console.log(data);
       alert("네트워크 오류");
      }
     });
